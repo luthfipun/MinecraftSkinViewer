@@ -1,0 +1,3 @@
+include ':minecraftSkinViewer'
+include ':app'
+rootProject.name = "MinecraftSkinViewer"
