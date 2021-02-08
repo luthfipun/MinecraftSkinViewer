@@ -32,3 +32,33 @@ sealed class SectionHD(val x: Int, val y: Int, val width: Int, val height: Int) 
     class LegRightOverlay : SectionHD(4 * 2, 36 * 2, 4 * 2, 12 * 2)
     class LegLeftOverlay : SectionHD(4 * 2, 52 * 2, 4 * 2, 12 * 2)
 }
+
+sealed class BackSection(val x: Int, val y: Int, val width: Int, val height: Int) {
+    class BackHead : BackSection(24, 8, 8, 8)
+    class BackBody : BackSection(32, 20, 8, 12)
+    class BackArmRight : BackSection(50, 20, 4, 12)
+    class BackArmLeft : BackSection(42, 52, 4, 12)
+    class BackLegRight : BackSection(12, 20, 4, 12)
+    class BackLegLeft : BackSection(28, 52, 4, 12)
+    class BackHeadOverlay : BackSection(56, 8, 8, 8)
+    class BackBodyOverlay : BackSection(32, 36, 8, 12)
+    class BackArmRightOverlay : BackSection(50, 36, 4, 12)
+    class BackArmLeftOverlay : BackSection(58, 52, 4, 12)
+    class BackLegRightOverlay : BackSection(12, 36, 4, 12)
+    class BackLegLeftOverlay : BackSection(12, 52, 4, 12)
+}
+
+sealed class BackSectionHD(val x: Int, val y: Int, val width: Int, val height: Int) {
+    class BackHead : BackSectionHD(24 * 2, 8 * 2, 8 * 2, 8 * 2)
+    class BackBody : BackSectionHD(32 * 2, 20 * 2, 8 * 2, 12 * 2)
+    class BackArmRight : BackSectionHD(50 * 2, 20 * 2, 4 * 2, 12 * 2)
+    class BackArmLeft : BackSectionHD(42 * 2, 52 * 2, 4 * 2, 12 * 2)
+    class BackLegRight : BackSectionHD(12 * 2, 20 * 2, 4 * 2, 12 * 2)
+    class BackLegLeft : BackSectionHD(28 * 2, 52 * 2, 4 * 2, 12 * 2)
+    class BackHeadOverlay : BackSectionHD(56 * 2, 8 * 2, 8 * 2, 8 * 2)
+    class BackBodyOverlay : BackSectionHD(32 * 2, 36 * 2, 8 * 2, 12 * 2)
+    class BackArmRightOverlay : BackSectionHD(50 * 2, 36 * 2, 4 * 2, 12 * 2)
+    class BackArmLeftOverlay : BackSectionHD(58 * 2, 52 * 2, 4 * 2, 12 * 2)
+    class BackLegRightOverlay : BackSectionHD(12 * 2, 36 * 2, 4 * 2, 12 * 2)
+    class BackLegLeftOverlay : BackSectionHD(12 * 2, 52 * 2, 4 * 2, 12 * 2)
+}

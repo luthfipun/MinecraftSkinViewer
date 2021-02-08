@@ -13,7 +13,10 @@ import com.bumptech.glide.load.engine.GlideException
 import com.bumptech.glide.request.RequestListener
 import com.bumptech.glide.request.target.Target
 import com.example.minecraftskinviewer.databinding.ActivityMainBinding
+import luthfipun.minecraftskinviewer.renderer.renderBackFull
+import luthfipun.minecraftskinviewer.renderer.renderBackPrimary
 import luthfipun.minecraftskinviewer.renderer.renderFull
+import luthfipun.minecraftskinviewer.renderer.renderPrimary
 
 class MainActivity : AppCompatActivity() {
 
@@ -57,7 +60,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setImageBitmap(bitmap: Bitmap) {
-        binding.imageView.setImageBitmapOnReady { renderFull(bitmap, width, width * 2) }
+        binding.imageView.setImageBitmapOnReady { renderBackFull(bitmap, width, width * 2) }
     }
 
     private fun bitmapFromAsset(context: Context, filePath: String): Bitmap {
