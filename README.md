@@ -18,7 +18,7 @@ Add the dependency
 
 ```
 dependencies {
-  def minecraftSkinViewer = '2.0'
+  def minecraftSkinViewer = '3.0'
   implementation "com.github.luthfipun:MinecraftSkinViewer:$minecraftSkinViewer"
 }
 ```
